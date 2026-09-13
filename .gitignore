@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+*.log
+.DS_Store
+__pycache__/
+.venv/
+models/*.joblib
+data/*.csv

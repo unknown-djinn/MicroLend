@@ -1,0 +1,20 @@
+microlend-prototype/
+├── app/
+│   ├── api/
+│   │   ├── assessment/route.js
+│   │   ├── cashflow/route.js
+│   │   ├── dataset/route.js
+│   │   └── repayment/route.js
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── scripts/
+│   ├── requirements.txt
+│   └── train_model.py
+├── .env.example
+├── .gitignore
+├── next.config.mjs
+├── package.json
+├── README.md
+├── PROJECT_STRUCTURE.txt
+└── vercel.json

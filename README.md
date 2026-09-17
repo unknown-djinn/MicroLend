@@ -1,76 +1,67 @@
-# MicroLend Nexus — Prototype
+# MicroLend Nexus
 
-A presentation-ready prototype for modelling connected microfinance risk and combining it with:
+### Dynamic Microloan Repayment, Cash-Flow Planning & Connected Borrower Risk Assessment
 
-- Individual borrower risk assessment
-- Group/network contagion simulation
-- Dynamic microloan repayment planning
-- Cash-flow planning and affordability checks
-- What-if interventions
-- Optional Hugging Face Dataset Viewer API connector
+## 🌐 Live Demo
 
-## 1. Run locally
+🚀 **[Open MicroLend Nexus — Live Demo](https://microlend-three.vercel.app/)**
 
-Requirements:
-- Node.js 18.18+ (Node.js 20+ recommended)
-- Git
+> https://microlend-three.vercel.app/
 
-Then:
+---
 
-```bash
-npm install
-npm run dev
-```
+## 📌 Overview
 
-Open:
+**MicroLend Nexus** is a dynamic microloan management platform designed to help borrowers plan repayments around their cash flow while providing lenders with connected, data-driven borrower risk assessment.
 
-http://localhost:3000
+The platform focuses on making microloan repayment more adaptable to real-world income and cash-flow conditions instead of relying solely on fixed repayment schedules.
 
-## 2. Push to GitHub
+---
 
-```bash
-git init
-git add .
-git commit -m "Initial MicroLend prototype"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/microlend-prototype.git
-git push -u origin main
-```
+## 🚀 Key Features
 
-If the repository already exists and has a remote:
+- 💰 **Dynamic Loan Repayment** — Adapt repayment planning based on changing cash-flow conditions.
+- 📊 **Cash-Flow Planning** — Track income, expenses, and upcoming repayment obligations.
+- 🔍 **Borrower Risk Assessment** — Support lender decision-making using connected financial information.
+- 🔄 **Repayment Optimization** — Align repayment schedules with expected borrower cash flow.
+- 🔗 **Connected Financial View** — Bring relevant borrower financial information together in one platform.
 
-```bash
-git add .
-git commit -m "Update prototype"
-git push
-```
+---
 
-## 3. Deploy to Vercel
+## 🎯 Goal
 
-Import the GitHub repository into Vercel. The project is already configured as a Next.js application.
+MicroLend Nexus aims to bridge the gap between **rigid microloan repayment structures** and the **irregular cash flows** often experienced by borrowers.
 
-No database is required for this prototype. The demo data is stored in the source code so the prototype works immediately.
+By connecting loan repayment planning with cash-flow information, the platform demonstrates a more flexible approach to microfinance management.
 
-Optional environment variables:
-- `HF_DATASET_NAME`
-- `HF_TOKEN`
+---
 
-The `/api/dataset` endpoint demonstrates how the prototype can call the Hugging Face Dataset Viewer API. For a real system, training data should be validated, licensed, versioned and processed offline rather than fetched during every user request.
+## 🛠️ Project Concept
 
-## 4. Prototype architecture
+The system combines:
 
-Browser
-  -> Next.js UI
-  -> Next.js Route Handlers
-      -> risk/contagion engine
-      -> repayment calculator
-      -> cash-flow planner
-      -> Hugging Face dataset connector
+- Dynamic repayment planning
+- Cash-flow analysis
+- Borrower risk assessment
+- Financial data integration
+- Repayment optimization
 
-The risk engine is deliberately transparent and presentation-friendly. It is NOT a production credit model and must not be used for real lending decisions.
+Together, these components create a unified platform for managing microloans more intelligently.
 
-## 5. ML extension
+---
 
-`scripts/train_model.py` is an optional starter training script. It shows the intended path for replacing the transparent demo scorer with a scikit-learn model after a properly licensed dataset has been obtained.
+## 🌐 Try the Demo
 
-For a real deployment, the trained model should be versioned and served through a dedicated inference service or suitable model-serving platform.
+### 👉 [Launch MicroLend Nexus](https://microlend-three.vercel.app/)
+
+---
+
+## 📄 Project Status
+
+🚧 **Prototype / Hackathon Project**
+
+This project demonstrates the concept and core workflow of a dynamic microloan repayment and risk-assessment platform.
+
+---
+
+### Built for innovation in financial technology and microfinance.
